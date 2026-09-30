@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!--Inputs-->
+    <div>
+        <label>Task name</label>
+        <input type="text" id="taskName">
+
+        <label>Category</label>
+        <select id="category">
+            <option>School</option>
+            <option>Work</option>
+            <option>Personal</option>
+        </select>
+
+        <label>Deadline</label>
+        <input type="Date" id="deadline">
+
+        <label>Status</label>
+        <select id="status">
+            <option>Not Done</option>
+            <option>In Progress</option>
+            <option>Done</option>
+        </select>
+
+        <!--Add task to list of to do-->
+
+        <button id="add-Btn">Add Task</button>
+    </div>
+
+
+    <!--Buttons to filter tasks by status-->
+    <div>
+
+        <button id="filterAll">All</button>
+        <button id="filterDone">Done</button>
+        <button id="filterInProgress">In Progress</button>
+        <button id="filterNotDone">Not Done</button>
+    </div>
+
+    <!--Display area w/ Options to update task status (Done, In progress, Not Done)-->
+
+    <div>
+        <ul id="taskList">
+
+            <li>
+                <select>
+                    <option>Not Done</option>
+                    <option>In Progress</option>
+                    <option>Done</option>
+                </select>
+            </li>
+        </ul>  
+    </div>
+
+</body>
